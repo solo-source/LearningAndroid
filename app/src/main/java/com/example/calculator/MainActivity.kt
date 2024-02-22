@@ -1,6 +1,7 @@
 package com.example.calculator
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,32 +16,31 @@ import com.example.calculator.ui.theme.CalculatorTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            CalculatorTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
+        Log.d("Status:", "onCreate Called")
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    override fun onStart() {
+        super.onStart()
+        Log.d("Status:","onStart Called")
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CalculatorTheme {
-        Greeting("Android")
+    override fun onResume() {
+        super.onResume()
+        Log.d("Status","onResume Called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.d("Status:","onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("Status","onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("Status:","onDestroy Called")
     }
 }
