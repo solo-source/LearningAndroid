@@ -24,8 +24,7 @@
         android:layout_weight="1"
         android:autofillHints=""
         android:gravity="top"
-        android:hint="@message"
-        android:inputType="TODO" />
+        android:hint="@message"/>
 
     <Button
         android:layout_width="100dp"
