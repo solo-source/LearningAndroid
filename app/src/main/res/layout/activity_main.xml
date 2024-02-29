@@ -4,4 +4,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <!-- Edit Text View to input the values -->
+
+    <!-- Text View to display result -->
+
+
+    <!-- Add Button-->
+    <!-- Add value in the layout_gravity -->
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:text="@string/enter_number"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/result"
+        android:textColorLink="#673AB7"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_margin="10dp" />
+
+<!--
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:layout_gravity="right" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/editInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:layout_gravity="right"
+                android:inputType="number"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <Button
+            android:id="@+id/btnCE"
+            android:text="@string/ce"
+            />
+
+        <Button
+            android:id="@+id/btnC"
+            android:text="@string/c"
+            />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="@string/delete"
+            />
+        </TableRow>
+
+    </TableLayout>
+-->
 </LinearLayout>
