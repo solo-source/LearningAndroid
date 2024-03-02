@@ -24,7 +24,7 @@
             android:autofillHints="input"
             android:ems="10"
             android:inputType="text"
-            android:text="" />
+            android:text="inputs" />
     </LinearLayout>
 
     <LinearLayout
@@ -201,4 +201,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
