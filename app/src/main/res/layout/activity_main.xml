@@ -12,17 +12,18 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="Calculator" />
+            android:text="Calculator"
+            android:ems="20" />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="500dp"
             android:layout_weight="1"
             android:autofillHints="input"
-            android:ems="10"
+            android:ems="16"
             android:inputType="text"
             android:text="inputs" />
     </LinearLayout>
