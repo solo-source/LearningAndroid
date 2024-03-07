@@ -12,19 +12,20 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="Calculator" />
+            android:text="@string/calculator"
+            android:ems="20" />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="500dp"
             android:layout_weight="1"
             android:autofillHints="input"
-            android:ems="10"
+            android:ems="16"
             android:inputType="text"
-            android:text="inputs" />
+            android:text="@string/inputs" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,21 +43,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="CE" />
+                android:text="@string/ce" />
 
             <Button
                 android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="C" />
+                android:text="@string/c" />
 
             <Button
                 android:id="@+id/btnDelete"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="DELETE" />
+                android:text="@string/delete" />
 
         </LinearLayout>
 
@@ -71,28 +72,28 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="7" />
+                android:text="@string/Seven" />
 
             <Button
                 android:id="@+id/btnEight"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="8" />
+                android:text="@string/Eight" />
 
             <Button
                 android:id="@+id/btnNine"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="9" />
+                android:text="@string/Nine" />
 
             <Button
                 android:id="@+id/btnAddition"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+" />
+                android:text="@string/Add" />
         </LinearLayout>
 
         <LinearLayout
@@ -106,28 +107,28 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4" />
+                android:text="@string/Four" />
 
             <Button
                 android:id="@+id/btnFive"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="5" />
+                android:text="@string/Five" />
 
             <Button
                 android:id="@+id/btnSix"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="6" />
+                android:text="@string/Six" />
 
             <Button
                 android:id="@+id/btnSbutraction"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/Subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -141,28 +142,28 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1" />
+                android:text="@string/One" />
 
             <Button
                 android:id="@+id/btnTwo"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="2" />
+                android:text="@string/Two" />
 
             <Button
                 android:id="@+id/btnThree"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="3" />
+                android:text="@string/Three" />
 
             <Button
                 android:id="@+id/btnMultiplication"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="*" />
+                android:text="@string/Multiply" />
         </LinearLayout>
 
         <LinearLayout
@@ -176,28 +177,28 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0" />
+                android:text="@string/Zero" />
 
             <Button
                 android:id="@+id/btnPoint"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="." />
+                android:text="@string/Dot" />
 
             <Button
                 android:id="@+id/btnEquals"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="=" />
+                android:text="@string/Equals" />
 
             <Button
                 android:id="@+id/btnDivide"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="/" />
+                android:text="@string/Divide" />
         </LinearLayout>
 
     </LinearLayout>
