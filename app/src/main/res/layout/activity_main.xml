@@ -7,7 +7,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="end"
+        >
 
         <TextView
             android:id="@+id/textView2"
@@ -15,18 +18,35 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:text="@string/calculator"
-            android:ems="20" />
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:ems="40"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="480dp"
             android:layout_weight="1"
             android:autofillHints="input"
             android:ems="16"
-            android:inputType="text"
+            android:inputType="number"
             android:text="@string/inputs" />
     </LinearLayout>
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="wrap_content"
+        android:background="@color/teal_700"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,13 +56,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            >
 
             <Button
                 android:id="@+id/btnClearAll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_weight="1"
                 android:text="@string/ce"
                 style="?android:attr/buttonBarButtonStyle" />
 
@@ -50,13 +73,13 @@
                 android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_weight="1"
                 android:text="@string/c"
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnDelete"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="@string/delete"
@@ -64,10 +87,19 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            >
 
 
             <Button
@@ -103,10 +135,19 @@
                 style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            >
 
 
             <Button
@@ -142,10 +183,19 @@
                 style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            >
 
 
             <Button
@@ -181,10 +231,19 @@
                 style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
+        <View
+            android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            >
 
 
             <Button
