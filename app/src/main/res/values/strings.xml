@@ -2,9 +2,8 @@
     <string name="app_name">Calculator</string>
     <string name="enter_number">Enter Number</string>
     <string name="result">result</string>
-    <string name="ce">CE</string>
-    <string name="c">C</string>
-    <string name="delete">Delete</string>
+    <string name="ac">AC</string>
+    <string name="delete">Del</string>
     <string name="calculator">Calculator</string>
     <string name="inputs">inputs</string>
     <string name="Seven">7</string>
@@ -22,5 +21,7 @@
     <string name="Zero">0</string>
     <string name="Dot">.</string>
     <string name="Equals">=</string>
-    <string name="Divide">/</string>
+    <string name="Divide">÷</string>
+    <string name="closeBracket">)</string>
+    <string name="openBracket">(</string>
 </resources>
