@@ -31,15 +31,23 @@
             android:background="@color/teal_700"
             />
 
-        <EditText
-            android:id="@+id/editTextText"
+        <TextView
+            android:id="@+id/workingTxtView"
             android:layout_width="match_parent"
-            android:layout_height="480dp"
-            android:layout_weight="1"
-            android:autofillHints="input"
-            android:ems="16"
-            android:inputType="number"
-            android:text="@string/inputs" />
+            android:layout_height="240dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/resultTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="40sp"/>
     </LinearLayout>
 
     <View
@@ -63,25 +71,33 @@
 
             <Button
                 android:id="@+id/btnClearAll"
-                android:layout_width="wrap_content"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/ce"
+                android:text="@string/ac"
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
-                android:id="@+id/btnClear"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnOpenBracket"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/c"
+                android:text="@string/openBracket"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/btnCloseBracket"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/closeBracket"
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnDelete"
-                android:layout_width="wrap_content"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:text="@string/delete"
                 style="?android:attr/buttonBarButtonStyle" />
 
