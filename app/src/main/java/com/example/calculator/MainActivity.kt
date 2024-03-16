@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
             var inputdata2 = binding.workingTxtView2.text.toString().trim().toBigDecimal()
             binding.resultTxtView.text = inputdata1.add(inputdata2).toString()
         }
-        binding.resultTxtView.setOnClickListener(viewModel.userClicked())
+       //binding.resultTxtView.setOnClickListener(viewModel.userClicked())
     }
 
     fun onSubtractClick(view: View) {
