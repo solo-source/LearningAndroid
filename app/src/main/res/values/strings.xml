@@ -21,7 +21,9 @@
     <string name="Zero">0</string>
     <string name="Dot">.</string>
     <string name="Equals">=</string>
-    <string name="Divide">÷</string>
+    <string name="Divide">/</string>
     <string name="closeBracket">)</string>
     <string name="openBracket">(</string>
+    <string name="c">C</string>
+    <string name="moduloOperator">%</string>
 </resources>

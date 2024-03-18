@@ -1,300 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:divider="@drawable/divider"
-        android:showDividers="end"
-        >
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="@string/calculator"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:ems="40"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            />
-
-        <View
-            android:layout_height="2dp"
-            android:layout_width="wrap_content"
-            android:background="@color/teal_700"
-            />
-
-        <TextView
-            android:id="@+id/workingTxtView"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:textAlignment="textEnd"
-            android:textColor="@color/black"
-            android:text=""
-            android:textSize="25sp"/>
-
-        <TextView
-            android:id="@+id/resultTxtView"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:textAlignment="textEnd"
-            android:textColor="@color/black"
-            android:text=""
-            android:textSize="40sp"/>
-    </LinearLayout>
-
-    <View
-        android:layout_height="2dp"
-        android:layout_width="wrap_content"
-        android:background="@color/teal_700"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="280dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/divider"
-            android:showDividers="middle"
-            >
+            android:layout_margin="15dp"
+            android:elevation="20dp"
+            app:strokeColor="@color/teal_700"
+            app:strokeWidth="1dp">
 
-            <Button
-                android:id="@+id/btnClearAll"
-                android:layout_width="10dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/workingTxtView1"
+                android:inputType="number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/ac"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:hint="Enter 1st Number"
+                android:textSize="20dp" />
 
-            <Button
-                android:id="@+id/btnOpenBracket"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/openBracket"
-                style="?android:attr/buttonBarButtonStyle" />
+        </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:id="@+id/btnCloseBracket"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/closeBracket"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnDelete"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/delete"
-                style="?android:attr/buttonBarButtonStyle" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_height="2dp"
-            android:layout_width="wrap_content"
-            android:background="@color/teal_700"
-            />
-
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/divider"
-            android:showDividers="middle"
-            >
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="20dp"
+            app:strokeColor="@color/teal_700"
+            app:strokeWidth="1dp">
 
-
-            <Button
-                android:id="@+id/btnSeven"
-                android:layout_width="10dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/workingTxtView2"
+                android:inputType="number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Seven"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:hint="Enter 2nd Number"
+                android:textSize="20dp" />
 
-            <Button
-                android:id="@+id/btnEight"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Eight"
-                style="?android:attr/buttonBarButtonStyle" />
+        </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:id="@+id/btnNine"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Nine"
-                style="?android:attr/buttonBarButtonStyle" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:elevation="20dp"
+            app:strokeColor="@color/teal_700"
+            app:strokeWidth="1dp">
 
-            <Button
-                android:id="@+id/btnAddition"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Add"
-                style="?android:attr/buttonBarButtonStyle" />
-        </LinearLayout>
+            <TextView
+                android:id="@+id/resultTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Result"
+                android:textSize="20sp"/>
 
-        <View
-            android:layout_height="2dp"
-            android:layout_width="wrap_content"
-            android:background="@color/teal_700"
-            />
+        </com.google.android.material.card.MaterialCardView>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/divider"
-            android:showDividers="middle"
-            >
-
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnFour"
-                android:layout_width="10dp"
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Four"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="+"
+                android:textSize="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:onClick="onAddClick" />
 
             <Button
-                android:id="@+id/btnFive"
-                android:layout_width="10dp"
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Five"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="-"
+                android:textSize="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:onClick="onSubtractClick" />
 
             <Button
-                android:id="@+id/btnSix"
-                android:layout_width="10dp"
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Six"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="*"
+                android:textSize="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:onClick="onMultiplyClick" />
 
             <Button
-                android:id="@+id/btnSubtraction"
-                android:layout_width="10dp"
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Subtract"
-                style="?android:attr/buttonBarButtonStyle" />
-        </LinearLayout>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="/"
+                android:textSize="20dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:onClick="onMultiplyClick" />
 
-        <View
-            android:layout_height="2dp"
-            android:layout_width="wrap_content"
-            android:background="@color/teal_700"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/divider"
-            android:showDividers="middle"
-            >
-
-
-            <Button
-                android:id="@+id/btnOne"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/One"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnTwo"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Two"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnThree"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Three"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnMultiplication"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Multiply"
-                style="?android:attr/buttonBarButtonStyle" />
-        </LinearLayout>
-
-        <View
-            android:layout_height="2dp"
-            android:layout_width="wrap_content"
-            android:background="@color/teal_700"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:divider="@drawable/divider"
-            android:showDividers="middle"
-            >
-
-
-            <Button
-                android:id="@+id/btnZero"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Zero"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnPoint"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Dot"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnEquals"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Equals"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnDivide"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Divide"
-                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
