@@ -60,14 +60,7 @@ class CalculatorActivity : AppCompatActivity() {
         }
     }
 
-    fun onOperatorClick(view: View) {
-        if(!stateError && lastNumeric) {
-            binding.workingTxtView.append((view as Button).text)
-            lastDot = false
-            lastNumeric = false
-            onEqual()
-        }
-    }
+
 
     fun onDigitClick(view: View) {
         if(stateError) {
@@ -86,7 +79,7 @@ class CalculatorActivity : AppCompatActivity() {
         binding.workingTxtView.text = binding.resultTxtView.text.toString().drop(1)
     }
 
-    fun onEqual() {
+    private fun onEqual() {
         if(lastNumeric && !stateError) {
             val txt = binding.workingTxtView.text.toString()
             expression = ExpressionBuilder(txt).build()
@@ -101,6 +94,15 @@ class CalculatorActivity : AppCompatActivity() {
                 stateError = true
                 lastNumeric = false
             }
+        }
+    }
+
+    fun onMathClick(view: View) {
+        if (!stateError && lastNumeric) {
+            binding.workingTxtView.append((view as Button).text)
+            lastDot = false
+            lastNumeric = false
+            onEqual()
         }
     }
 }
